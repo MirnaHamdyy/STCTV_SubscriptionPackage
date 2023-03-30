@@ -11,10 +11,7 @@ public class SubscriptionPackagePage {
     private By litePackageNameLocator = By.xpath("//div[@class='plan-names']//div[1]//strong[1]");
     private By litePackagePriceLocator = By.xpath("//div[@class='plan-row']//div[1]//div[1]//b[1]");
 
-    ////div[@class='plan-section']//div[1]//div[1]//i[1]
-    ////body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/i[1]
     private By litePackageCurrencyLocator = By.xpath("//div[@class='plan-section']//div[1]//div[1]//i[1]");
-
     private By classicPackageNameLocator = By.xpath("//div[@class='classic']//strong[@class='plan-title']");
     private By classicPackagePriceLocator = By.xpath("//div[@class='classic']//b");
     private By classicPackageCurrencyLocator = By.xpath("//div[@class='classic']//i");
@@ -23,15 +20,12 @@ public class SubscriptionPackagePage {
     private By premiumPackagePriceLocator = By.xpath("//div[@class='plan-row']//div[3]//div[1]//b[1]");
     private By premiumPackageCurrencyLocator = By.xpath("//div[@class='plan-row']//div[3]//div[1]//i[1]");
 
-    //Additional packages
     private By discoveryAdditionalLitePrice = By.xpath("//body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]");
     private By fightSporAdditionaltLitePrice = By.xpath("//body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]");
 
-    // XPaths for classic package
     private By discoveryAdditionalClassicPrice = By.xpath("//body/div[@id='wrapper']/div[@id='minisub-container']/div/div[@id='main']/div/div/div[2]/div[2]/div[1]");
     private By fightSportAdditionalClassicPrice = By.xpath("//div[2]//div[3]//div[2]//div[1]");
 
-    // XPaths for premium package
     private By discoveryAdditionalPremiumAvailable = By.xpath("//body//div[@id='wrapper']//div[@id='main']//div//div//div[2]//div[2]//div[3]");
     private By fightSportAdditionalPremiumPrice = By.xpath("//div[2]//div[3]//div[2]//div[3]");
 
@@ -71,11 +65,6 @@ public class SubscriptionPackagePage {
     public WebElement getPremiumPackagePrice() {
         return ElementFinder.findAndWaitForElement(driver,premiumPackagePriceLocator);
     }
-
-    public WebElement getPremiumPackageCurrency() {
-        return ElementFinder.findAndWaitForElement(driver,premiumPackageCurrencyLocator);
-    }
-
 
     public WebElement getAdditionalDiscoveryLitePrice() {
         return ElementFinder.findAndWaitForElement(driver,discoveryAdditionalLitePrice);
