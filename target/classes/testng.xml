@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test Suite" parallel="false">
+    <test name="Validate Arabic Packages For All Countries" parallel="false">
+        <parameter name="propertyFileLang" value="ar"/>
+
+        <classes>
+
+            <class name="testcases.SubscriptionPackageTest">
+
+            </class>
+        </classes>
+    </test>
+    <test name="Validate English Packages For All Countries" parallel="false">
+        <parameter name="propertyFileLang" value="en"/>
+        <classes>
+            <class name="testcases.SubscriptionPackageTest">
+
+            </class>
+        </classes>
+    </test>
+</suite>

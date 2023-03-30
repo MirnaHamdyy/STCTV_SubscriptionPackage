@@ -1,0 +1,12 @@
+# Test data
+package1.name=لايت
+package1.price=15
+package1.currency=ريال سعودي/شهر
+
+package2.name=الأساسية
+package2.price=25
+package2.currency=ريال سعودي/شهر
+
+package3.name=بريميوم
+package3.price=60
+package3.currency=ريال سعودي/شهر
